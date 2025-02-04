@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://cligvdqg4pgyh"]
+
+[ext_resource type="Texture2D" uid="uid://b4s63d05d3qdc" path="res://modified dino/barrel.png" id="1_bhsnv"]
+
+[node name="barrel" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(4, 4)
+texture = ExtResource("1_bhsnv")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(0, -0.0999985)
+scale = Vector2(4, 3.99519)
+polygon = PackedVector2Array(-13.5, 13, -13.5, -13, 13.5, -13, 13.5, 13)

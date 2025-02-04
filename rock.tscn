@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://c80xpgyg5nlm3"]
+
+[ext_resource type="Texture2D" uid="uid://csadbrek8xcs6" path="res://modified dino/rock.png" id="1_sso11"]
+
+[node name="Rock" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1.5, 0.5)
+scale = Vector2(3, 3.015)
+texture = ExtResource("1_sso11")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+scale = Vector2(4, 4)
+polygon = PackedVector2Array(-15, -9, -17, -7, -18.75, -4.25, -19.5, -0.5, -20.5, 4.25, -20.75, 9, -19.75, 11, 21.5, 11.25, 20.75, 9, 19.75, 7, 17.25, 5.5, 14, 4.75, 10.75, 2.75, 10.75, 0, 5, -5.25, 0.75, -5.25, -2, -8.75, -5, -10.75, -9.75, -11, -12.5, -9.5)
+one_way_collision = true

@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bihdxuj1qx4yp"]
+
+[ext_resource type="Texture2D" uid="uid://bbpji6uawjkp" path="res://modified dino/ground.png" id="1_rlgba"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_53djh"]
+size = Vector2(2304, 98)
+
+[node name="Ground" type="StaticBody2D"]
+disable_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 552)
+texture = ExtResource("1_rlgba")
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1152, 599)
+shape = SubResource("RectangleShape2D_53djh")
